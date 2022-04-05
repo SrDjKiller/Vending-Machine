@@ -15,7 +15,7 @@ while seguir == False:
             if seleccionP == j['Codigo']:
                   producto = j
       if producto == '':
-            print('CODIGO INVALIDO')
+            print('CODIGO ERRONEO')
       else:
             print(f"Estupendo, {producto['Producto']} le costará {producto['Precio']}€")
 
