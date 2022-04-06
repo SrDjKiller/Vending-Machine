@@ -2,8 +2,6 @@ import time
 import products as p
 
 i = 0
-dinerot = 0
-cambio = 0
 seguir = False
 while seguir == False:
       print("##..:Productos:..##")
@@ -18,7 +16,8 @@ while seguir == False:
             print('CODIGO ERRONEO')
       else:
             print(f"Estupendo, {producto['Producto']} le costará {producto['Precio']}€")
-
+      dinerot = 0
+      cambio = 0
       while dinerot < producto['Precio']:
             dinero = float(input("Introduce Cantidad, solo monedas de 0.50€, 1€ o 2€: "))
             if (dinero == 0.5 or dinero == 1 or dinero == 2):
@@ -40,7 +39,7 @@ while seguir == False:
 
       time.sleep(3)
 
-      cont = input("Para salir de la máquina introduzca s y para seguir comprando pulse cualquier tecla y presione enter:  ")
+      cont = input("Para salir de la máquina introduzca s y para seguir comprando pulse enter:  ")
       if cont == 's' or cont == 'S':
             seguir = False
       else:
