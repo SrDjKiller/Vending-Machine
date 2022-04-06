@@ -24,7 +24,7 @@ V2 CHANGELOG:
 
 V2 - ERRORS:
 
-- None for the moment
+- Infinite products could be purchased (RESOLVED)
 
 #---------------------------------------------------------#
 
